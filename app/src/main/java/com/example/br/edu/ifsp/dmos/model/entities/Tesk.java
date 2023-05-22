@@ -22,7 +22,7 @@ public class Tesk {
         init();
     }
 
-    public Tesk(String title, boolean favorite) {
+    public Tesk(String name, boolean favorite) {
         this.name = name;
         this.favorite = favorite;
         init();
@@ -36,11 +36,11 @@ public class Tesk {
         this.name = title;
     }
 
-    public boolean isFavorite() {
+    public boolean isUrgent() {
         return favorite;
     }
 
-    public void setFavorite(boolean favorite) {
+    public void setUrgence(boolean favorite) {
         this.favorite = favorite;
     }
 

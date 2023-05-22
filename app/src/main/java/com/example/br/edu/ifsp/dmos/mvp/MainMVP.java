@@ -21,6 +21,8 @@ public interface MainMVP {
 
         void populateList(RecyclerView recyclerView);
 
-        void favoriteArticle(Tesk tesk);
+        void urgenteTesk(Tesk tesk);
+
+        void deletTesk(Tesk tesk);
     }
 }

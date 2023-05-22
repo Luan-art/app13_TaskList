@@ -2,7 +2,7 @@ package com.example.br.edu.ifsp.dmos.mvp;
 
 import android.os.Bundle;
 
-public class TeskDetailsMVP {
+public interface TeskDetailsMVP {
 
     interface View{
         void updateUI(String NameTesk);
@@ -15,10 +15,11 @@ public class TeskDetailsMVP {
     }
 
     interface Presenter{
+
         void deatach();
 
         void verifyUpdate();
 
-        void saveArticle(String NameTesk);
+        void saveTesk (String NameTesk);
     }
 }
