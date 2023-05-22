@@ -24,5 +24,7 @@ public interface MainMVP {
         void urgenteTesk(Tesk tesk);
 
         void deletTesk(Tesk tesk);
+
+        void updateList();
     }
 }

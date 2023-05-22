@@ -56,13 +56,6 @@ public class ItemPocketRecyclerAdapter extends RecyclerView.Adapter<ItemPocketRe
             }
         });
 
-        holder.urgenteClickImg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                urgenteClick(tesk);
-            }
-        });
-
         holder.edittClickImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -90,6 +83,7 @@ public class ItemPocketRecyclerAdapter extends RecyclerView.Adapter<ItemPocketRe
 
     private void urgenteClick(Tesk tesk){
         presenter.urgenteTesk(tesk);
+        presenter.updateList();
         notifyDataSetChanged();
     }
 
