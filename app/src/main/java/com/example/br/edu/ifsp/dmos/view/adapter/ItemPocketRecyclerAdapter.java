@@ -114,7 +114,6 @@ public class ItemPocketRecyclerAdapter extends RecyclerView.Adapter<ItemPocketRe
             urgenteClickImg = itemView.findViewById(R.id.image_urgente);
             edittClickImg = itemView.findViewById(R.id.image_edit);
             deletClickImg = itemView.findViewById(R.id.image_delet);
-            itemView.setOnClickListener(this);
         }
 
         @Override
