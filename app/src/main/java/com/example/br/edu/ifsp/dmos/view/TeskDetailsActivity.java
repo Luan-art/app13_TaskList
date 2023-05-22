@@ -7,12 +7,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.br.edu.ifsp.dmos.R;
-import com.example.br.edu.ifsp.dmos.model.entities.Tesk;
 import com.example.br.edu.ifsp.dmos.mvp.TeskDetailsMVP;
 import com.example.br.edu.ifsp.dmos.presenter.TeskDetailsPresenter;
 
-public class TeskDetailsActivity extends Activity implements TeskDetailsMVP.View, View.OnClickListener {
+public class TeskDetailsActivity extends AppCompatActivity implements TeskDetailsMVP.View, View.OnClickListener {
 
     private TeskDetailsMVP.Presenter presenter;
     private EditText nameTesk;
@@ -85,6 +86,8 @@ public class TeskDetailsActivity extends Activity implements TeskDetailsMVP.View
 
 
     private void setToolbar() {
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-    }
+        if (getSupportActionBar() != null){
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+        }
 }
